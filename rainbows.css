@@ -56,3 +56,9 @@
 }
 #tongue{position:cheek;}
 /* ^ OMG! An ID! That kills performance! */
+
+/*
+  .catchadream:after{content:'廌'}
+
+*/
+/* ^ uncomment to add unicorn */
