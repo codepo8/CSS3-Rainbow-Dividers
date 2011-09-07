@@ -3,21 +3,24 @@
 <head>
   <meta charset='utf-8'>
 
-  <title>codepo8/CSS3-Rainbow-Dividers @ GitHub</title>
-
+  <title>OMG!!! Rainbow Dividers in CSS3!!!</title>
+<link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
   <style type="text/css">
     body {
       margin-top: 1.0em;
       background-color: #faf8f5;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
+      font-family: Comfortaa, Arial, FreeSans, san-serif;
       color: #000000;
     }
+    section,header,footer{display:block}
     #container {
       margin: 0 auto;
-      width: 700px;
+      width: 800px;
     }
-    h1 { font-size: 3.8em; color: #05070a; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
+    
+    h1 { font-size: 3.8em; color: #05070a; margin-bottom: 3px; font-family:monoton,helvetica,arial,sans-serif;position:relative}
+    h1 span{position:absolute;right:0;top:10px}
     h1 a { text-decoration: none }
     h2 { font-size: 1.5em; color: #05070a; }
     h3 { text-align: center; color: #05070a; }
@@ -27,51 +30,77 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+    
+    /*
+     * CSS animated rainbow dividers of awesome 
+     * by Chris Heilmann @codepo8 and Lea Verou @leaverou 
+    **/
+    @-moz-keyframes charlieeee {
+      from { background-position:top left; } 
+      to {background-position:top right; }
+    }
+    @-webkit-keyframes charlieeee { 
+      from { background-position:top left; }  
+      to { background-position:top right; }  
+    }
+    .catchadream{
+      background-image:-webkit-linear-gradient( left, red, orange, yellow, green,
+                                              blue, indigo, violet, indigo, blue,
+                                              green, yellow, orange, red );
+      background-image:-moz-linear-gradient( left, red, orange, yellow, green,
+                                             blue,indigo, violet, indigo, blue,
+                                             green, yellow, orange,red );
+      -moz-animation:charlieeee 2.5s forwards linear infinite;
+      -webkit-animation:charlieeee 2.5s forwards linear infinite;
+      background-size:50% auto;
+    }
   </style>
 </head>
 
 <body>
-  <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
 
-    <div class="download">
-      <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
 
-    <h1><a href="http://github.com/codepo8/CSS3-Rainbow-Dividers">CSS3-Rainbow-Dividers</a>
-      <span class="small">by <a href="http://github.com/codepo8">codepo8</a></span></h1>
+    <h1><a href="http://github.com/codepo8/CSS3-Rainbow-Dividers">CSS3-Rainbow-Dividers</a> <span><a href="http://github.com/codepo8/CSS3-Rainbow-Dividers/zipball/master">
+      <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+    <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers/tarball/master">
+      <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a></span>
+    </h1>
 
     <div class="description">
       No longer must your rainbow dividers be images slowing down your computer! Make them hardware accelerated!
     </div>
+    <hr class="catchadream" style="height:5px;border:none;width:100%"></hr>
+    <p>What if you want to party like it is 1997 but you don't feel like creating your own rainbow dividers of awesome in Photoshop? Simple, just link this style sheet of awesome and you have animated rainbow dividers like the ones surrounding this paragraph!</p>
+    <hr class="catchadream" style="height:5px;border:none;width:100%"></hr>
+    <p>All you need to do is to add the class <code>catchadream</code> to any element to turn it from "meh" to <span class="catchadream" style="color:#fff;font-weight:bold;padding:0 1em">fabulous</span>. For example:</p>
+    <pre>&lt;hr class="catchadream" style="height:20px;border:none;width:100%"&gt;&lt;/hr&gt;</pre>
+    <p>Results in:</p> 
+    <hr class="catchadream" style="height:20px;border:none;width:100%"></hr>
 
+    <h2>OMG!!!! And the best thing!!!!!</h2>
+    
+    <p>The best: these awesome rainbow dividers are done with CSS3 animations! Yes! The cool new thing all the amazing designers use! This means they are hardware accelerated!!! This is the best thing ever for performance! It uses all the cool stuff your iPhone can do!</p>
+    
+    <p class="description">Go forth and make the web amazing!</p>
+    
     <h2>Authors</h2>
-<p>Chris Heilmann (@codepo8)<br/>Lea Verou (@leaverou)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Christian Heilmann (@codepo8)<br/>      </p>
-
+<ul><li>Chris Heilmann (<a href="http://twitter.com/codepo8">@codepo8</a>)</li>
+<li>Lea Verou (<a href="http://twitter.com/leaverou">@leaverou</a>)</li>
+</ul>
 
     <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers/zipball/master">zip</a> or
-      <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers/tarball/master">tar</a> formats.
-    </p>
+    <p>You can download this project in either <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers/zipball/master">zip</a> or <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers/tarball/master">tar</a> formats.</p>
     <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
       by running:
       <pre>$ git clone git://github.com/codepo8/CSS3-Rainbow-Dividers</pre>
     </p>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers">codepo8/CSS3-Rainbow-Dividers</a>
-    </div>
 
   </div>
 
   
+  <a href="http://github.com/codepo8/CSS3-Rainbow-Dividers"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 </body>
 </html>
