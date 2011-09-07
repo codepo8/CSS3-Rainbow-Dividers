@@ -1,0 +1,57 @@
+/*
+ * CSS animated rainbow dividers of awesome 
+ * by Chris Heilmann @codepo8 and Lea Verou @leaverou and unicorn @ollie
+ **/
+@-moz-keyframes charlieeee {
+	from { background-position: top left; } 
+	to   { background-position: top right; }
+}
+@-webkit-keyframes charlieeee { 
+	from { background-position: top left; }  
+	to   { background-position: top right; }  
+}
+@-o-keyframes charlieeee { 
+	from { background-position: top left; }  
+	to   { background-position: top right; }  
+}
+@-ms-keyframes charlieeee { 
+	from { background-position: top left; }  
+	to   { background-position: top right; }  
+}
+@-khtml-keyframes charlieeee { 
+	from { background-position: top left; }  
+	to   { background-position: top right; }
+}
+@keyframes charlieeee { 
+	from { background-position: top left; }
+	to   { background-position: top right; }
+}
+
+.catchadream{
+	$gradient: left, red, orange, yellow, green, blue, indigo, violet, indigo, blue, green, yellow, orange, red;
+	background-image: -webkit-linear-gradient($gradient);
+	background-image:    -moz-linear-gradient($gradient);
+	background-image:      -o-linear-gradient($gradient);
+	background-image:     -ms-linear-gradient($gradient);
+	background-image:  -khtml-linear-gradient($gradient);
+	background-image:         linear-gradient($gradient);
+
+	$animation: charlieeee 2.5s forwards linear infinite;
+	-moz-animation:    $animation;
+	-webkit-animation: $animation;
+	-o-animation:      $animation;
+	-khtml-animation:  $animation;
+	-ms-animation:     $animation;
+	-lynx-animation:   $animation;
+	animation:         $animation;
+
+	background-size: 50% auto;
+}
+
+#tongue { position: cheek; }
+/* ^ OMG! An ID! That kills performance! */
+
+/*
+  .catchadream:after { content: '廌' }
+*/
+/* ^ uncomment to add unicorn */
