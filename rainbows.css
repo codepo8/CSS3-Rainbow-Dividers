@@ -54,3 +54,5 @@
   animation:charlieeee 2.5s forwards linear infinite;
   background-size:50% auto;
 }
+#tongue{position:cheek;}
+/* ^ OMG! An ID! That kills performance! */
