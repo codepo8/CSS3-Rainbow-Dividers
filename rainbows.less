@@ -1,0 +1,65 @@
+/*
+ * CSS animated rainbow dividers of awesome 
+ * by Chris Heilmann @codepo8 and Lea Verou @leaverou 
+**/
+@fbp: top left; // "From" background-position value
+@tbp: top right; // "To" background-position value
+
+@-moz-keyframes charlieeee {
+    from { background-position: @fbp; } 
+    to   { background-position: @tbp; }
+}
+@-webkit-keyframes charlieeee { 
+    from { background-position: @fbp; }  
+    to   { background-position: @tbp; }  
+}
+@-o-keyframes charlieeee { 
+    from { background-position: @fbp; }  
+    to   { background-position: @tbp; }  
+}
+@-ms-keyframes charlieeee { 
+    from { background-position: @fbp; }  
+    to   { background-position: @tbp; }  
+}
+@-khtml-keyframes charlieeee { 
+    from { background-position: @fbp; }  
+    to   { background-position: @tbp; }  
+}
+@keyframes charlieeee { 
+    from { background-position: @fbp; }  
+    to   { background-position: @tbp; }  
+}
+
+.catchadream {
+    @gradient: left, red, orange, yellow, green, blue, indigo, violet, indigo, blue, green, yellow, orange, red; 
+    background-image: -webkit-linear-gradient(@gradient);
+    background-image:    -moz-linear-gradient(@gradient);
+    background-image:      -o-linear-gradient(@gradient);
+    background-image:     -ms-linear-gradient(@gradient);
+    background-image:  -khtml-linear-gradient(@gradient);
+    background-image:         linear-gradient(@gradient);
+    @animation: charlieeee 2.5s forwards linear infinite;
+    -moz-animation:    @animation;
+    -webkit-animation: @animation;
+    -o-animation:      @animation;
+    -khtml-animation:  @animation;
+    -ms-animation:     @animation;
+    -lynx-animation:   @animation;
+    animation:         @animation;
+    background-size: 50% auto;
+    -moz-transform:    translateZ(0);
+    -webkit-transform: translateZ(0);
+    -o-transform:      translateZ(0);
+    -ms-transform:     translateZ(0);
+    transform:         translateZ(0);
+}
+
+#tongue{
+    position: cheek;
+}
+// ^ OMG! An ID! That kills performance! */
+
+//.catchadream::after {
+//    content:'廌';
+//}
+// ^ uncomment to add unicorn
